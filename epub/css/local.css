@@ -5,3 +5,65 @@ section[epub|type~="titlepage"] p{
 	text-align: center;
 	text-indent: 0;
 }
+
+section[epub|type~="foreword"]{
+	margin-top: 20vh;
+}
+
+[epub|type~="z3998:article"] header p{
+	font-variant-caps: all-small-caps;
+	font-weight: bold;
+}
+
+[epub|type~="z3998:article"] h2{
+	margin: 1em 0;
+}
+
+#article-8 ul{
+	list-style-type: none;
+}
+
+/* Images */
+figure{
+	break-inside: avoid;
+	margin: 1em 2.5em;
+}
+
+figure img{
+	display: block;
+	margin: auto;
+	max-height: 100vh;
+	max-width: 100%;
+}
+
+figcaption{
+	font-size: smaller;
+	margin: 1em;
+	text-align: center;
+}
+
+figcaption p + p{
+	text-indent: 0;
+}
+/* Images */
+
+/* Poem */
+[epub|type~="z3998:poem"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:poem"] p > span + br{
+	display: none;
+}
+
+[epub|type~="z3998:poem"] p + p{
+	margin-top: 1em;
+}
+/* End poem */
